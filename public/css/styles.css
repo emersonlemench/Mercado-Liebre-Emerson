@@ -1,0 +1,421 @@
+/* dados por la consigna*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.centrado-horizontal{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+/* dados por la consigna*/
+
+article:hover > div > i{
+    transition: transform 1.0s;
+    transform: rotate(-90deg);
+
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .form .input{
+    height: 22px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 200px;
+    padding: 10px;
+}
+
+header.form{
+    width:50%;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.price{
+    font-size: 18px;
+    flex:30%;
+}
+
+.discount{
+    flex:70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.footerIcon{
+    text-align: center;
+    font-size: 2em;
+    color:#1259c3;
+}
+
+.footerIcon i:hover{
+        transition: color 0.3s;
+        color: #EAC926;;
+    
+}
+
+footer .text-container{
+display: flex;
+flex: 100%;
+background-color: rgb(227, 227, 227);
+flex-wrap: wrap;
+
+}
+
+.pay-method-text-container, .gift-text-container, .security-text-container{
+    flex:29%;
+    margin: 20px;
+}
+
+.footer-legal{
+    display: block;
+    text-align: left;
+    margin: 20px;
+}
+
+/* footer .footerIcon i:hover{
+    color: #EAC926;
+} */
+nav{
+    display: none;
+}
+
+
+
+
+
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        width: 45%;
+    }
+    main section .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .section-login form{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+}
+
+@media (min-width: 769px){
+    main section article .description{
+        display: none;
+    }
+    main section article{
+        width: 22%;
+    }
+    div.top-header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .top-header p{
+        font-size: 20px;
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        margin: 0 10px;
+    }
+    ul li a{
+        font-size: 14px;
+    }
+    article:hover > .main-article > .description{
+        display: block;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+}
+
+@media (min-width:1200px){
+    .top-header, nav{
+        max-width: 1200px;
+        margin:auto;
+    }
+    div.top-header .form{
+        display: block
+        ;
+    }
+    
+    article:hover > .main-article > .description{
+        display: block;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+/* login */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-login form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .section-login .form input {
+    width: 200px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: #d5d5d5;
+    cursor: pointer;
+    width: 60px;
+    border-radius: 4px;
+  }
+
+  .loguearse{
+      transition-property: background-color;
+      transition-duration: 0.5s;
+  }
+
+  .loguearse a{
+      text-decoration: none;
+      color:#000;
+      transition-property: color;
+      transition-duration: 0.5s;
+  }
+
+  .loguearse:hover{
+      background-color: #1a73e8;
+  }
+
+
+  .loguearse:hover > a{
+      color:white
+  }
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.perfil input{
+    justify-self: flex-start;
+}
+
+.section-register form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section-register .form .perfil h4{
+    display:block;
+}
+
+.section-register .form .perfil{
+    display:block;
+}
+
+.section-register .form button{
+    margin: 10px 0;
+    max-width: 400px;
+    color: white
+
+}
+
+.section-register .form button a{
+    text-decoration: none;    
+}
+
+.section-register .form button a:visited{
+    color:white    
+}
+
+.form input:invalid{
+    background-color: pink;
+}
+
+
